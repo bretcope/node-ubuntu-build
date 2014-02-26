@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+VERSION=$1
+apt-get update
+apt-get install wget python g++ make checkinstall
+src=$(mktemp -d) && cd $src
+wget -O node.tar.gz -N http://nodejs.org/dist/v${VERSION}/node-v${VERSION}.tar.gz
+tar xzvf node.tar.gz && cd node-v*
+./configure
+checkinstall -y --install=no --pkgversion ${VERSION}  make -j$(($(nproc)+1)) install
+dpkg -i node_*
+npm install -g node-gyp
