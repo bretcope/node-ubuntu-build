@@ -18,4 +18,4 @@ Any version can be uninstalled using `sudo dpkg -r node`. To finish cleanup of a
 
 ## License
 
-NO WARRANTY IS IMPLIED; use at your own risk. The script a modified version of the one [found here](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#wiki-build-from-source), and no additional copyright is claimed. Feel free to use and modify as desired.
+NO WARRANTY IS IMPLIED; use at your own risk. The script is a modified version of the one [found here](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#wiki-build-from-source), and no additional copyright is claimed. Feel free to use and modify as desired.
