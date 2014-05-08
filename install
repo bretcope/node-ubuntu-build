@@ -2,7 +2,7 @@
 
 VERSION=$1
 apt-get update
-apt-get install wget python g++ make checkinstall
+apt-get install -y wget python2.7 g++ make checkinstall
 src=$(mktemp -d) && cd $src
 wget -O node.tar.gz -N http://nodejs.org/dist/v${VERSION}/node-v${VERSION}.tar.gz
 tar xzvf node.tar.gz && cd node-v*
