@@ -1,6 +1,6 @@
 {
   "name": "ubuntu-build",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Bret Copeland <bret@atlantisflight.org>",
   "description": "Ubuntu install script which downloads, builds, and installs node.js from source.",
   "repository": {
